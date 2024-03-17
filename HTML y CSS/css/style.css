@@ -1,8 +1,23 @@
 nav{
     background: #00b8a9;
     padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
-
+.nav-enlace{
+    display: inline-block;
+    background-color: salmon;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-boton{
+    background-color: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
 .columna{
     background-color:blueviolet;
     color: white;
@@ -12,4 +27,20 @@ nav{
 }
 .padre{
     display:flex;
+}
+
+@media (max-width:600px){
+    nav{
+        background-color: #00b8a9;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 5px;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display:none;
+    }
 }

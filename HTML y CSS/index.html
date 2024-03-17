@@ -8,9 +8,10 @@
 </head>
 <body>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a href="#" class="nav-enlace desaparece">Inicio</a>
+        <a href="#" class="nav-enlace desaparece">Nosotros</a>
+        <a href="#" class="nav-enlace desaparece">Contacto</a>
     </nav>
 
     <section class="padre">
@@ -20,5 +21,14 @@
 
         <p class ='columna'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas consectetur, odit soluta ab ducimus nisi dignissimos quod dolore sunt, placeat quia error sit perspiciatis asperiores sequi dolorum esse eum beatae?</p>
     </section>
+    <script>//trabaja con java script
+        function accion() {
+            console.log ("esta funcionando mi boton")
+            var ancla = document.getElementsByClassName ("nav-enlace")
+            for (var i =0; i < ancla.length; i++) {
+                ancla [i].classList.toggle("desaparece");
+            }
+        }
+</script>
 </body>
 </html>
